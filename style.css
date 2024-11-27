@@ -1,0 +1,115 @@
+.mein{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+.calculator{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: aqua;
+   padding: 25px 20px;
+   margin: 10px;
+   border-radius: 10px;
+}
+.calculator-1{
+   margin-bottom: 10px;
+}
+.calculator-1 input{
+   text-align: right;
+   background-color: #fff;
+   padding: 5px;
+   font-size: 35px;
+   height: 60px;
+   width: 300px;
+   cursor: pointer;
+   border-radius: 10px;
+   border: none;
+   font-weight: bold;
+   outline: none;
+}
+.calculator-2{
+   /* display: flex; */
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   /* padding: 10px; */
+   /* margin: 10px; */
+   /* text-align: center; */
+}
+.calculator-2 button{
+   text-align: center;
+   margin: 2px;
+   /* padding: 10px 20px; */
+   /* display: flex; */
+   /* justify-content: center; */
+   /* flex-direction: column; */
+   text-align: center;
+   font-size: 32px;
+   width: 70px;
+   height: 70px;
+   border-radius: 10px;
+   border: none;
+   font-weight: bold;
+}
+@media(max-width: 390px){
+   .calculator-2 button{
+      width: 65px;
+      height: 65px;
+      font-size: 30px;
+   }
+   .calculator-1 input{
+      width: 280px;
+   }
+}
+@media(max-width: 300px){
+   .calculator-2 button{
+      width: 50px;
+      height: 50px;
+      font-size: 25px;
+   }
+   .calculator-1 input{
+      width: 220px;
+      height: 50px;
+   }
+   .calculator{
+      padding: 20px 10px;
+   }
+}
+.history{
+   background-color: black;
+   color: #fff;
+   height: 80vh;
+   width: 350px;
+   position: fixed;
+   /* top: 70px; */
+   left: 456px;
+   top: -100%;
+   border-radius: 10px;
+   /* display: none; */
+   transition: 0.5s;
+}
+.historys{
+   padding: 10px 25px;
+}
+.historys h1 {
+   text-align: center;
+}
+.ps{
+   height: 60vh;
+   overflow-y: scroll;
+}
+.ps p{
+   font-size: 30px;
+}
+.active .history{
+   top: calc(100% - 620px);
+}
+.icon{
+   position: relative;
+   left: 150px;
+   bottom: 10px;
+   /* top: 0px; */
+}
