@@ -4,12 +4,30 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Calculator</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Geist:wght@100..900&family=Hind:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   
    <div class="mein">
-      <div class="calculator">
+      <div id="history1" class="history">
+         <div class="historys">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 20px;" class="clr">
+               <div class="del">
+                  <i id="trash"  class="fa-solid fa-trash"></i>
+               </div>
+               <div class="xmark">
+                  <i id="del" class="fa-solid fa-xmark"></i>
+               </div>
+            </div>
+            <h1>History</h1>
+            <div class="ps"></div>
+         </div>
+      </div>
+      <div id="calculator" class="calculator">
          <div class="icon">
             <i id="icon" style="font-size: 20px;" class="fa-solid fa-clock-rotate-left"></i>
          </div>
@@ -17,41 +35,27 @@
             <input type="text" name="" id="input" disabled>
          </div>
          <div class="calculator-2">
-            <button onclick="deletNum()">C</button>
-            <button onclick="clearAll()">AC</button>
-            <button onclick="btn('%')">%</button>
-            <button onclick="btn('/')">/</button><br>
+            <button class="btn1" onclick="deletNum()"> <span>C</span> </button>
+            <button class="btn1" onclick="clearAll()"> <span>AC</span></button>
+            <button class="btn1" onclick="btn('%')"> <span>%</span> </button>
+            <button class="btn1" onclick="btn('/')"> <span>/</span></button><br>
             <button onclick="btn('7')">7</button>
             <button onclick="btn('8')">8</button>
             <button onclick="btn('9')">9</button>
-            <button onclick="btn('*')">X</button><br>
+            <button class="btn1" onclick="btn('*')"> <span>X</span> </button><br>
             <button onclick="btn(4)">4</button>
             <button onclick="btn(5)">5</button>
             <button onclick="btn(6)">6</button>
-            <button onclick="btn('-')">-</button><br>
+            <button class="btn1" onclick="btn('-')"> <span>-</span> </button><br>
             <button onclick="btn(1)">1</button>
             <button onclick="btn(2)">2</button>
             <button onclick="btn(3)">3</button>
-            <button onclick="btn('+')">+</button><br>
+            <button class="btn1" onclick="btn('+')"><span>+</span></button><br>
             <button onclick="btn('00')">00</button>
             <button onclick="btn(0)">0</button>
             <button onclick="btn('.')">.</button>
-            <button onclick="solve()">=</button>
+            <button class="btn1" onclick="solve()"><span>=</span></button>
          </div>
-      </div>
-   </div>
-   <div class="history">
-      <div class="historys">
-         <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 20px;" class="clr">
-            <div class="del">
-               <i id="trash"  class="fa-solid fa-trash"></i>
-            </div>
-            <div class="xmark">
-               <i id="del" class="fa-solid fa-xmark"></i>
-            </div>
-         </div>
-         <h1>History</h1>
-         <div class="ps"></div>
       </div>
    </div>
    <script src="app.js"></script>
