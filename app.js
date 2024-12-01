@@ -17,9 +17,10 @@ icon.addEventListener('click', () => {
 del.addEventListener('click', () => {
    body.classList.remove('active')
    calculator.style.display = "block"
-   icon.style.marginLeft = '-20px'
-   icon.style.marginTop = '15px'
-   icon.classList.add('icon')
+   icon.style.marginLeft = '115px'
+   // icon.style.marginTop = '15px'
+   // icon.classList.add('fa-solid')
+   // icon.classList.add('new1')
    data.style.display = 'none'
 })
 
