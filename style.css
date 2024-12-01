@@ -3,6 +3,7 @@ body{
    /* background: rgb(90,0,120); */
    background-color: #555;
    font-family: "Rubik", serif;
+   overflow-x: hidden;
 /* background: linear-gradient(90deg, rgba(90,0,120,1) 0%, rgba(36,0,121,1) 100%); */
 }
 .mein{
@@ -10,8 +11,6 @@ body{
    justify-content: center;
    align-items: center;
    height: 100vh;
-   /* background: rgb(255,0,0);
-background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(76,0,255,1) 100%); */
 }
 .calculator{
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -19,7 +18,6 @@ background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(76,0,255,1) 100%); *
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   /* background-color: transparent; */
    background-color: #000;
    padding: 25px 20px;
    margin: 10px;
@@ -30,30 +28,29 @@ background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(76,0,255,1) 100%); *
 }
 .calculator-1 input{
    color: black;
-   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   border: 1px solid aliceblue;
    text-align: right;
    background-color: #888;
    padding: 5px;
    font-size: 35px;
-   height: 60px;
-   width: 300px;
+   height: 50px;
+   width: 265px;
    cursor: pointer;
    border-radius: 10px;
-   border: none;
    font-weight: bold;
-   outline: none;
+}
+.calculator-1 input:hover{
+   background-color: #777;
+   transform: scale(1.0);
+   transition: 0.2s;
 }
 .calculator-1 input::placeholder{
    color: black;
 }
 .calculator-2{
-   /* display: flex; */
    justify-content: center;
    flex-direction: column;
    align-items: center;
-   /* padding: 10px; */
-   /* margin: 10px; */
-   /* text-align: center; */
 }
 .btn1{
     color: rgb(141, 3, 3);
@@ -61,16 +58,13 @@ background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(76,0,255,1) 100%); *
 .calculator-2 .btn1:focus{
    background-color: rgb(175, 2, 2);
    color: aliceblue;
-   transition: 0.5;
-   /* transform: 1.1s; */
 }
 .calculator-2 button:hover{
-   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-   transition: 1.5s;
-   transform: 1.1;
+   transition: 0.5s;
+   transform: scale(1.0);
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .calculator-2 button:focus{
-   transition: 0.5s;
    color: aliceblue;
    background-color: rgb(78, 82, 92);
 
@@ -78,16 +72,11 @@ background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(76,0,255,1) 100%); *
 .calculator-2 button{
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    text-align: center;
-   margin: 2px;
-   /* padding: 10px 20px; */
-   /* display: flex; */
-   /* justify-content: center; */
-   /* flex-direction: column; */
+   margin: 3px;
    text-align: center;
    font-size: 30px;
-   width: 70px;
-   height: 70px;
-   /* padding: 20px; */
+   width: 60px;
+   height: 60px;
    border-radius: 10px;
    border: none;
    font-weight: bold;
@@ -119,8 +108,12 @@ background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(76,0,255,1) 100%); *
    .calculator{
       padding: 20px 10px;
    }
+   /* .icon{
+      margin: 0px;
+   } */
 }
 .history{
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    background-color: black;
    color: #fff;
    height: 550px;
@@ -160,9 +153,11 @@ background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(76,0,255,1) 100%); *
 .icon{
    color: aliceblue;
    position: relative;
-   left: 150px;
+   left: 140px;
    bottom: 10px;
+   /* margin: 10px; */
    /* top: 0px; */
+   width: 20px;
 }
 .p1{
    border-bottom: 2px solid #999;
